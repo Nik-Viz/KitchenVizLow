@@ -1,0 +1,54 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="680" scrolly="365" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="631.2431877686302" scrolly="389.28978377786325" scale="0.7404322273126936">
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="/3dB@,G*s6E*7.Ua,$;1" x="-610" y="-350">
+      <value name="VALUE">
+        <shadow type="animationList" id="GG+adrmorTDWJS;Pr|,/">
+          <field name="FIELDNAME">fan</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="+xOJ]e5D{/cO8B)%te[p" x="-610" y="-230">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="^onR5{3(`t7xUA8Y/gGC">
+          <field name="TEXT">fanOn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="%@3{Zan;MDPGCfUfX}0M">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopRepeat</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="LB)y4?+D*A`?#CY%aYoq">
+              <field name="FIELDNAME">fan</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="$.jyn?s@1jGtR%%,Obmu">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="Wf5)-WsofDZ?K`JC8h^I">
+              <field name="TEXT">fanOff</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="stopAnimation" id="$}L5iP%%vr$^C(v7!-4k">
+              <value name="VALUE">
+                <shadow type="animationList" id="tT0%gv[d46fUWFfDS(J4">
+                  <field name="FIELDNAME">fan</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="403" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
